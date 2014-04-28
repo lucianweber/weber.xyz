@@ -1,8 +1,6 @@
 lucianw.github.io
 =================
 
-I just wanted to try out GitHub Pages. So here are my first steps on GitHub.
+I am just starting on GitHub, so cut me some slack if I make some mistakes.
 
-I have some other cool projects, which I am planning on publishing via GitHub. But I will need do make some changes to them before I can make them available freely for everyone.
-
-Greetings from Germany!
+Actually I just wanted to try out GitHub Pages, so why don't you visit my [Page](http://lucianw.github.io/)
