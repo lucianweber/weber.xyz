@@ -1,4 +1,4 @@
-LucianW.github.io
+lucianw.github.io
 =================
 
 I just wanted to try out GitHub Pages. So here are my first steps on GitHub.
