@@ -1,29 +1,65 @@
 <html>
 <head>
     <title>Lucian Weber</title>
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src="main.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function () {
+            Lucian.Init();
+        })
+    </script>
 </head>
-<body style="background-color: lightgray;">
-    <div style="width: 500px; background-color: white; padding: 0 30px 10px 30px; border: 1px solid darkgray; text-align: left; margin: 20px auto;">
-        <h1>Lucian Weber - GitHub</h1>
-        <h3>I Welcome you to my GitHub Account.</h3>
-        <div style="margin: 10px 0;">
-            This will from now on be the new home for projects that I am working on in my free time.
+<body>
+    <div class="MainWrapper">
+        <div class="MainBox">
+            <div class="MenuWrapper">
+                <div class="MenuBox">
+                    <p><a href="#main" onclick="Lucian.LoadContent('main')">Main</a></p>
+                    <p><a href="#about" onclick="Lucian.LoadContent('about')">About Me</a></p>
+                    <p><a href="#projects" onclick="Lucian.LoadContent('projects')">Projects</a></p>
+                    <p><a href="#contact" onclick="Lucian.LoadContent('contact')">Contact</a></p>
+                </div>
+            </div>
+            <div class="ContentWrapper">
+                <div class="ContentBox" id="contentBox">
+
+                </div>
+            </div>
         </div>
-        <div style="margin: 10px 0;">
-            There already are some projects lying on my harddisc that are waiting to be released.<br />
-            The problem is, that most of the time I am using proprietary APIs for which an secret APIkey is needed. And since I am not willing to share my private keys, I will need to find a solution that allows anyone to instantly use my projects and at the same time keeping my keys secret.
+    </div>
+    <div class="TemplateWrapper" id="templateWrapper">
+        <div id="temp_main">
+            <h3>Welcome you to my GitHub Account-Page.</h3>
+            <p>
+                I encourage you to take a look around. At the moment, it might look a little empty, as I still did not find the time to upload my recent projects to GitHub.
+            </p>
+            <p>
+                But since there are already some projects lying on my harddisc that are waiting to be released, this is about to change.
+            </p>
+            <p>
+                The only problem is, that I am using proprietary APIs for which an secret API-key is needed. And since I am not willing to share my private keys, I will need to find a solution that allows anyone to instantly use my projects and at the same time keeping my keys a secret.
+            </p>
+            <p>
+                As soon as I found a good way to do that, I will be uploading my projects. I am also planning on describing my projects on this page. Feel free to take a look around!
+            </p>
+            <p style="text-align: right; margin-top: 30px;">
+                Greetings, Lucian!
+            </p>
         </div>
-        <div style="margin: 10px 0;">
-            As soon as I found time to solve this problem, I will show my projects to anyone who is or is not interested. :-D
+        <div id="temp_about">
+            todo
         </div>
-        <div style="margin: 10px 0;">
-            If you have questions or suggestions for improvements on current projects or even ideas for completely new projects, feel free to drop me an email.
+        <div id="temp_projects">
+            todo
         </div>
-        <div style="width: 100%; text-align: center; margin: 10px 0;">
-            <a href="mailto:git@lucian.email">git [at] lucian.email</a>
+        <div id="temp_contact">
+            todo
         </div>
-        <div style="text-align: right; margin: 10px 0;">
-            Greetings, Lucian!
+        <div id="temp_error">
+            <h3>Whoops, we got a Problem here...</h3>
+            <p>I am deeply sorry, but the content you are looking for seems to be gone :/</p>
         </div>
     </div>
 </body>

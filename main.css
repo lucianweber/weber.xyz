@@ -1,0 +1,42 @@
+body {
+    background-color: lightgray;
+    font-family: 'Roboto', sans-serif;
+}
+
+.MainWrapper {
+    width: 700px;
+    min-height: 600px;
+    background-color: white;
+    border: 1px solid darkgray;
+    margin: 40px auto 0 auto;
+    display: table;
+}
+
+.MainBox {
+    display: table-row;
+}
+
+.MenuWrapper {
+    width: 100px;
+    display: table-cell;
+    border-right: 1px solid darkgray;
+    padding: 20px;
+    text-align: center;
+}
+
+.MenuBox {
+    /*padding-top: 20px;*/
+}
+
+.ContentWrapper {
+    display: table-cell;
+    padding: 10px 20px;
+}
+
+.ContentBox {
+
+}
+
+.TemplateWrapper {
+    display: none;
+}
