@@ -1,6 +1,9 @@
-lucianw.github.io
-=================
+# lucianw.github.io
 
-I am just starting on GitHub, so cut me some slack if I make some mistakes.
+So I started this account a while ago, just in case I would need it any time soon.
+It turns out, I was mainly using GitHub as a source for my own projects.
 
-Actually I just wanted to try out GitHub Pages, so why don't you visit my [Page](http://lucianw.github.io/)
+Now I decided it is time to share some of my work with anyone who might care.
+And as a start I am going to rewrite this starting page of mine.
+
+Just visit it [here](http://lucianw.github.io/).
