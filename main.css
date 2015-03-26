@@ -1,42 +1,70 @@
 body {
-    background-color: lightgray;
+    background-color: gray;
     font-family: 'Roboto', sans-serif;
+    color: white;
+    margin: 0;
+
 }
 
-.MainWrapper {
-    width: 700px;
-    min-height: 600px;
-    background-color: white;
-    border: 1px solid darkgray;
-    margin: 40px auto 0 auto;
-    display: table;
+.content {
+    max-width: 370px;
+    margin: 70px auto 0 auto;
+    padding: 10px;
 }
 
-.MainBox {
-    display: table-row;
+.box {
+    border: 1px solid white;
+    padding: 10px 15px;
 }
 
-.MenuWrapper {
+
+.headline {
+    width: 100%;
+}
+
+.headline > div {
+    width: 120px;
+    float: right;
+    text-align: right;
+}
+
+.headline > div > h3 {
+    margin: 0;
+}
+
+.headline > div > h5 {
+    margin: 0;
+    font-weight: normal;
+}
+
+.headline > img {
+    border: 1px solid white;
+    border-radius: 50%;
     width: 100px;
-    display: table-cell;
-    border-right: 1px solid darkgray;
-    padding: 20px;
+    height: 100px;
     text-align: center;
+    line-height: 100px;
+    margin-top: -40px;
 }
 
-.MenuBox {
-    /*padding-top: 20px;*/
+
+.text > h4 {
+    margin: 20px 0 0 0;
 }
 
-.ContentWrapper {
-    display: table-cell;
-    padding: 10px 20px;
+.text > p {
+    margin: 10px 0;
 }
 
-.ContentBox {
 
+.footer {
+    text-align: right;
 }
 
-.TemplateWrapper {
-    display: none;
+.footer > a {
+    color: white !important;
+}
+
+.footer > a:hover {
+    opacity: 0.6;
 }

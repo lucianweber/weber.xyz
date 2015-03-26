@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "blocks": [
+    {
+      "headline": "Basic Info",
+      "lines": [
+        {
+          "key": "Age",
+          "value": 21
+        },
+        {
+          "key": "Location",
+          "value": "Germany"
+        },
+        {
+          "key": "Occupation",
+          "value": "Studying Computer Science"
+        }
+      ]
+    }
+  ],
+  "me": {
+    "name": "Lucian Weber",
+    "title": "Software-Developer",
+    "mail": "git@lucian.email",
+    "image": "me.jpg"
+  }
+}
