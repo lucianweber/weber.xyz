@@ -6,4 +6,4 @@ It turns out, I was mainly using GitHub as a source for my own projects.
 Now I decided it is time to share some of my work with anyone who might care.
 And as a start I am going to rewrite this starting page of mine.
 
-Just visit it [here](http://lucianw.github.io/).
+Just visit it [here](http://weber.xyz/).
