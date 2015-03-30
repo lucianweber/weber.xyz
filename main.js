@@ -7,11 +7,20 @@
 			content += "<h4>" + block.headline + "</h4><p>";
 			for(var j = 0; j < block.lines.length; j++) {
 				var line = block.lines[j];
-				content += line.key + ": ";
-				if(typeof line.value === "object" && line.value.length !== undefined) {
-					line.value = line.value.join(", ");
+				if(typeof line.value === "string" && line.value.match(/^(url:)\S+/) !== null) {
+					content += "<a href=\"" + line.value.substring(4, line.value.length) + "\" target=\"_blank\">" + line.key + "</a>";
+				} else {
+					content += line.key + ": ";
+					if(typeof line.value === "object" && line.value.length !== undefined) {
+						line.value = line.value.join(", ");
+					}
+					content += line.value;
 				}
-				content += line.value + "<br>";
+				if(block.linebreaks === true) {
+					content += "<br>";
+				} else if(j < block.lines.length - 1) {
+					content += " - ";
+				}
 			}
 			content += "</p>";
 		}

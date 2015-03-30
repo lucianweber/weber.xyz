@@ -3,6 +3,7 @@
   "blocks": [
     {
       "headline": "Basic Info",
+      "linebreaks": true,
       "lines": [
         {
           "key": "Age",
@@ -15,6 +16,28 @@
         {
           "key": "Occupation",
           "value": "Studying Computer Science"
+        }
+      ]
+    },
+    {
+      "headline": "Pages",
+      "linebreaks": false,
+      "lines": [
+        {
+          "key": "Facebook",
+          "value": "url:https://www.facebook.com/lucian.weber"
+        },
+        {
+          "key": "Twitter",
+          "value": "url:https://www.twitter.com/lucianweber"
+        },
+        {
+          "key": "GitHub",
+          "value": "url:https://www.github.com/lucianw"
+        },
+        {
+          "key": "Google+",
+          "value": "url:https://plus.google.com/u/0/113511575473783038857"
         }
       ]
     }

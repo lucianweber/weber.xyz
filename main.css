@@ -1,6 +1,6 @@
 body {
     background-color: gray;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Tahoma', sans-serif;
     color: white;
     margin: 0;
 
@@ -45,6 +45,18 @@ body {
     text-align: center;
     line-height: 100px;
     margin-top: -40px;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+.headline > img:hover {
+    border-radius: 10px;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
 }
 
 
@@ -61,10 +73,11 @@ body {
     text-align: right;
 }
 
-.footer > a {
+a {
     color: white !important;
+    text-decoration: none;
 }
 
-.footer > a:hover {
+a:hover {
     opacity: 0.6;
 }
