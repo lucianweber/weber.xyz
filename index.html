@@ -1,10 +1,93 @@
-<html>
+<html manifest="content/manifest.cache">
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Lucian Weber</title>
-    <link href="main.css" rel="stylesheet" type="text/css" />
-    <link href='http://fonts.googleapis.com/css?family=Roboto:300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <style>
+        body {
+            background-color: gray;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+            margin: 0;
+
+        }
+
+        .content {
+            max-width: 370px;
+            margin: 70px auto 0 auto;
+            padding: 10px;
+        }
+
+        .box {
+            border: 1px solid white;
+            padding: 10px 15px;
+        }
+
+
+        .headline {
+            width: 100%;
+        }
+
+        .headline > div {
+            width: 120px;
+            float: right;
+            text-align: right;
+        }
+
+        .headline > div > h3 {
+            margin: 0;
+        }
+
+        .headline > div > h5 {
+            margin: 0;
+            font-weight: normal;
+        }
+
+        .headline > img {
+            border: 1px solid white;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            margin-top: -40px;
+            -webkit-transition-duration: 1s;
+            -moz-transition-duration: 1s;
+            -o-transition-duration: 1s;
+            transition-duration: 1s;
+        }
+
+        .headline > img:hover {
+            border-radius: 10px;
+            -webkit-transition-duration: 1s;
+            -moz-transition-duration: 1s;
+            -o-transition-duration: 1s;
+            transition-duration: 1s;
+        }
+
+
+        .text > h4 {
+            margin: 20px 0 0 0;
+        }
+
+        .text > p {
+            margin: 10px 0;
+        }
+
+
+        .footer {
+            text-align: right;
+        }
+
+        a {
+            color: white !important;
+            text-decoration: none;
+        }
+
+        a:hover {
+            opacity: 0.6;
+        }
+    </style>
 </head>
 <body>
     <div class="content">
@@ -22,6 +105,71 @@
             <a id="mail"></a>
         </div>
     </div>
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // Application Cache Checker
+            window.addEventListener('load', function (e) {
+                window.applicationCache.addEventListener('updateready', function (e) {
+                    if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
+                        window.applicationCache.swapCache();
+                        window.location.reload();
+                    }
+                }, false);
+            }, false);
+        })();
+
+        (function (module, window, undefined) {
+
+            function print(obj) {
+                var content = "";
+                for(var i = 0; i < obj.blocks.length; i++) {
+                    var block = obj.blocks[i];
+                    content += "<h4>" + block.headline + "</h4><p>";
+                    for(var j = 0; j < block.lines.length; j++) {
+                        var line = block.lines[j];
+                        if(typeof line.value === "string" && line.value.match(/^(url:)\S+/) !== null) {
+                            content += "<a href=\"" + line.value.substring(4, line.value.length) + "\" target=\"_blank\">" + line.key + "</a>";
+                        } else {
+                            content += line.key + ": ";
+                            if(typeof line.value === "object" && line.value.length !== undefined) {
+                                line.value = line.value.join(", ");
+                            }
+                            content += line.value;
+                        }
+                        if(block.linebreaks === true) {
+                            content += "<br>";
+                        } else if(j < block.lines.length - 1) {
+                            content += " - ";
+                        }
+                    }
+                    content += "</p>";
+                }
+                window.document.getElementsByClassName('text')[0].innerHTML = content;
+
+                window.document.getElementById('name').innerHTML = obj.me.name;
+                window.document.getElementById('title').innerHTML = obj.me.title;
+                window.document.getElementById('mail').innerHTML = obj.me.mail.replace("@", "[at]");
+                window.document.getElementById('mail').href = "mailto:" + obj.me.mail;
+                window.document.getElementById('image').src = obj.me.image;
+            }
+
+            function init() {
+                var request = new XMLHttpRequest();
+                request.onreadystatechange = function() {
+                    if (request.readyState === 4 && request.status === 200) {
+                        var json = JSON.parse(request.responseText);
+                        print(json);
+                    }
+                };
+                request.open("GET", "content/content.json", true);
+                request.send();
+            }
+
+            init();
+
+        })((window.l = {}), window);
+    </script>
+    <link rel="icon" type="image/png" href="content/favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 </body>
 </html>

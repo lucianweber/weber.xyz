@@ -1,0 +1,17 @@
+CACHE MANIFEST
+
+#Version v1.06
+
+CACHE:
+
+# internal
+content.json
+me.jpg
+favicon.ico
+
+# external
+http://fonts.googleapis.com/css?family=Roboto:300&subset=latin,latin-ext
+http://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2
+
+NETWORK:
+*
