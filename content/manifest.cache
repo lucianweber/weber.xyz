@@ -1,13 +1,13 @@
 CACHE MANIFEST
 
-#Version v1.06
+#Version v1.07
 
 CACHE:
 
 # internal
 content.json
 me.jpg
-./favicon.ico
+../favicon.ico
 
 # external
 http://fonts.googleapis.com/css?family=Roboto:300&subset=latin,latin-ext
