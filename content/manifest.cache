@@ -7,7 +7,7 @@ CACHE:
 # internal
 content.json
 me.jpg
-favicon.ico
+./favicon.ico
 
 # external
 http://fonts.googleapis.com/css?family=Roboto:300&subset=latin,latin-ext
