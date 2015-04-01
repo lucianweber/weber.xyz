@@ -1,12 +1,13 @@
 CACHE MANIFEST
 
-#Version v1.07
+#Version v1.14
 
 CACHE:
 
 # internal
 content.json
 me.jpg
+back.jpg
 ../favicon.ico
 
 # external
