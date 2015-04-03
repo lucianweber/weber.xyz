@@ -1,18 +1,12 @@
 CACHE MANIFEST
 
-#Version v1.14
+#Version v2.00
 
 CACHE:
 
-# internal
-content.json
 me.jpg
-back.jpg
+style.css
 ../favicon.ico
-
-# external
-http://fonts.googleapis.com/css?family=Roboto:300&subset=latin,latin-ext
-http://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2
 
 NETWORK:
 *
