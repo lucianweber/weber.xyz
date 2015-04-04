@@ -46,20 +46,20 @@ body {
     line-height: 100px;
 }
 
-.headline {
-    width: 230px;
+.text {
     margin: 0 auto;
     text-align: center;
-    color: #EEE;
     padding-top: 20px;
     transform: rotateZ(-5deg);
 }
 
+.headline {
+    width: 230px;
+    color: #EEE;
+}
+
 .social {
     width: 310px;
-    margin: 0 auto;
-    padding-top: 20px;
-    transform: rotateZ(-5deg);
 }
 
 a {
