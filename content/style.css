@@ -70,7 +70,7 @@ a:hover {
     opacity: 0.6;
 }
 
-a.clickAnimation:focus {
+a.clickAnimation {
     transform: rotateZ(360deg);
     -webkit-transition-duration: 1s;
     -moz-transition-duration: 1s;

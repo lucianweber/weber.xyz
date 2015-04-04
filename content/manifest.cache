@@ -1,12 +1,15 @@
 CACHE MANIFEST
 
-#Version v2.03
+#Version v2.03.20
 
 CACHE:
 
 me.jpg
 style.css
+script.js
 ../favicon.ico
+
+http://www.google-analytics.com/analytics.js
 
 NETWORK:
 *
