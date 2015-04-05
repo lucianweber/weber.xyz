@@ -40,8 +40,8 @@ body {
 
 .image > img {
     border-radius: 50%;
-    width: 190px;
-    height: 190px;
+    width: 200px;
+    height: 200px;
     text-align: center;
     line-height: 100px;
 }
@@ -53,12 +53,12 @@ body {
     transform: rotateZ(-5deg);
 }
 
-.headline {
+#headline {
     width: 230px;
     color: #EEE;
 }
 
-.social {
+#social {
     width: 310px;
 }
 
@@ -75,5 +75,5 @@ a.clickAnimation {
     -webkit-transition-duration: 1s;
     -moz-transition-duration: 1s;
     -o-transition-duration: 1s;
-    transition-duration: 0.5s;
+    transition-duration: 1s;
 }
