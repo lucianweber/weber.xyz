@@ -1,7 +1,5 @@
 # <a href="http://www.weber.xyz" target="_blank">www.weber.xyz</a>
 
-So I started this account a while ago, just in case I would need it any time soon.
-It turns out, I was mainly using GitHub as a source for my own projects.
+Welcome to my humble little website.
 
-Now I decided it is time to share some of my work with anyone who might care.
-And as a start I am going to rewrite this starting page of mine.
+There is not much to see at the moment. Maybe I'll set up a blog some time, but for now this is just a simple little website.
