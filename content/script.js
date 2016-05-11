@@ -22,11 +22,11 @@
 })();
 
 // Links
-(function() {
+(function(document) {
     
     function init() {
         // add link animation events
-        var links = window.document.getElementsByClassName('socialItem');
+        var links = document.querySelector('.socialItem');
         for(var i = 0; i < links.length; i++) {
             links[i].addEventListener('click', function() { animateLink(this); } , false);
         }
@@ -96,5 +96,4 @@
             }
         });
     }
-    
-})();
+})(window.document);

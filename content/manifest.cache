@@ -1,15 +1,13 @@
 CACHE MANIFEST
 
-#Version v2.10
+#Version v2.11
 
 CACHE:
 
-lucian_weber.jpg
+lucian_weber.2.jpg
 style.css
 script.js
 ../favicon.ico
-
-http://www.google-analytics.com/analytics.js
 
 NETWORK:
 *
