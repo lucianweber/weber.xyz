@@ -1,6 +1,6 @@
 CACHE MANIFEST
 
-#Version v2.11
+#Version v2.12
 
 CACHE:
 
@@ -8,6 +8,14 @@ lucian_weber.2.jpg
 style.css
 script.js
 ../favicon.ico
+
+font-awesome/css/font-awesome.min.css
+font-awesome/fonts/fontawesome-webfont.eot?v=4.6.3
+font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.6.3
+font-awesome/fonts/fontawesome-webfont.woff?v=4.6.3
+font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+font-awesome/fonts/fontawesome-webfont.ttf?v=4.6.3
+font-awesome/fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular
 
 NETWORK:
 *

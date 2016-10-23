@@ -10,56 +10,11 @@
     box-sizing: border-box;
 }
 
-html, body {
-    height: 90%;
-    width: 100%;
-}
-
 body {
     background: #222;
     color: #CCC;
     font-family: Helvetica, sans-serif;
     font-size: 1em;
-}
-
-.main {
-    display: table;
-    height: 100%;
-    width: 100%;
-}
-
-.content {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.image {
-    width: 200px;
-    margin: 0 auto;
-}
-
-.image > img {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    text-align: center;
-    line-height: 100px;
-}
-
-.text {
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 20px;
-    transform: rotateZ(-5deg);
-}
-
-#headline {
-    width: 310px;
-    color: #EEE;
-}
-
-#social {
-    width: 310px;
 }
 
 a {
@@ -70,10 +25,92 @@ a:hover {
     opacity: 0.6;
 }
 
-a.clickAnimation {
-    transform: rotateZ(360deg);
-    -webkit-transition-duration: 1s;
-    -moz-transition-duration: 1s;
-    -o-transition-duration: 1s;
-    transition-duration: 1s;
+
+.content {
+    margin-top: 10%;
+}
+
+.image {
+    width: 200px;
+    margin: 0 auto;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+.image > div {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    background-image: url("lucian_weber.2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200px 200px;
+}
+
+#social, #headline {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#headline {
+    width: 310px;
+    color: #EEE;
+    padding: 20px 0;
+    transform: rotateZ(-5deg);
+}
+
+#social {
+    -webkit-transition-property: padding;
+    -webkit-transition-duration: 200ms;
+    -webkit-transition-timing-function: linear;
+}
+
+#social > a {
+    -webkit-transition-property: display, padding, margin, height, width, position, transform-origin;
+    -webkit-transition-duration: 200ms;
+    -webkit-transition-timing-function: linear;
+}
+
+#social:not(.small) {
+    padding-top: 10px;
+}
+
+#social:not(.small) > a {
+    display: block;
+    padding-top: 15px;
+}
+
+
+
+#social.small {
+    margin-top: -100px;
+    margin-left: -20px;
+}
+
+#social.small > a {
+    height: 120px;
+    position: absolute;
+    width: 20px;
+    transform-origin: top center;
+    display: inline-block;
+    pointer-events: none;
+}
+
+#social.small > a:nth-child(1) { transform: rotate(50deg); }
+#social.small > a:nth-child(2) { transform: rotate(30deg); }
+#social.small > a:nth-child(3) { transform: rotate(10deg); }
+#social.small > a:nth-child(4) { transform: rotate(-10deg); }
+#social.small > a:nth-child(5) { transform: rotate(-30deg); }
+#social.small > a:nth-child(6) { transform: rotate(-50deg); }
+
+#social.small > a > i {
+    pointer-events: all;
+    position: absolute;
+    bottom: 0;
+}
+
+#social.small > a > span {
+    display: none;
 }
