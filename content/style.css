@@ -68,7 +68,7 @@ a:hover {
 }
 
 #social > a {
-    -webkit-transition-property: display, padding, margin, height, width, position, transform-origin;
+    -webkit-transition-property: display, padding, margin, height, position, transform-origin;
     -webkit-transition-duration: 200ms;
     -webkit-transition-timing-function: linear;
 }
@@ -80,6 +80,8 @@ a:hover {
 #social:not(.small) > a {
     display: block;
     padding-top: 15px;
+    width: 100px;
+    margin: 0 auto;
 }
 
 
