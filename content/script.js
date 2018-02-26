@@ -1,15 +1,3 @@
-// Application Cache Checker
-(function() {
-    window.addEventListener('load', function (e) {
-        window.applicationCache.addEventListener('updateready', function (e) {
-            if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
-                window.applicationCache.swapCache();
-                window.location.reload();
-            }
-        }, false);
-    }, false);
-})();
-
 // Google Analytics
 (function() {
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
