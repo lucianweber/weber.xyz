@@ -41,6 +41,6 @@
                 .toggle('small');
         });
     
-    console.log("%cDear visitor,\n\n%cyou can find all sourcefiles of this website in its public github repository. [https://github.com/lucianw/lucianw.github.io]\nIf you want to contact me, choose one of the listed platforms and drop me a message.\n\nHave a great day,\nLucian", "font-size: 20px","font-size: 16px");
+    console.log("%cDear visitor,\n\n%cyou can find all sourcefiles of this website in its public github repository. [https://github.com/lucianw/weber.xyz]\nIf you want to contact me, choose one of the listed platforms and drop me a message.\n\nHave a great day,\nLucian", "font-size: 20px","font-size: 16px");
 
 })(window.document);
