@@ -1,6 +1,10 @@
 CACHE MANIFEST
 
-#Version 3dbd538e-c570-4b70-abea-ed3029d0d7e6
+#Version 4aa46409-d5ae-4192-9b33-de07844993c8
+
+CACHE:
 
 NETWORK:
 *
+
+FALLBACK:
